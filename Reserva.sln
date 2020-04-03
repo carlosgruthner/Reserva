@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reserva", "Reserva\Reserva.csproj", "{73CEDD9A-849C-4EA3-9D66-B28A0F0FDD23}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73CEDD9A-849C-4EA3-9D66-B28A0F0FDD23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73CEDD9A-849C-4EA3-9D66-B28A0F0FDD23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73CEDD9A-849C-4EA3-9D66-B28A0F0FDD23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73CEDD9A-849C-4EA3-9D66-B28A0F0FDD23}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF849DD1-E09F-46EB-996B-54C0F99FF602}
+	EndGlobalSection
+EndGlobal
