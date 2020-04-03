@@ -16,7 +16,7 @@ namespace Reserva
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fLogin());
+            Application.Run(new fPrincipal());
         }
     }
 }
