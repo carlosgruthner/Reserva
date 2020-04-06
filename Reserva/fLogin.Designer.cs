@@ -37,6 +37,8 @@
             this.tb_Usuario = new System.Windows.Forms.TextBox();
             this.tb_Senha = new System.Windows.Forms.TextBox();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,17 +69,18 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(65, 213);
+            this.label1.Location = new System.Drawing.Point(65, 197);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(27, 13);
+            this.label1.Size = new System.Drawing.Size(68, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "CPF";
+            this.label1.Text = "Nº Funcional";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(65, 273);
+            this.label2.Location = new System.Drawing.Point(65, 252);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 3;
@@ -102,7 +105,7 @@
             this.tb_Usuario.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tb_Usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Usuario.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.tb_Usuario.Location = new System.Drawing.Point(69, 235);
+            this.tb_Usuario.Location = new System.Drawing.Point(68, 213);
             this.tb_Usuario.Name = "tb_Usuario";
             this.tb_Usuario.Size = new System.Drawing.Size(192, 20);
             this.tb_Usuario.TabIndex = 7;
@@ -111,7 +114,7 @@
             // 
             this.tb_Senha.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tb_Senha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Senha.Location = new System.Drawing.Point(71, 299);
+            this.tb_Senha.Location = new System.Drawing.Point(68, 268);
             this.tb_Senha.Name = "tb_Senha";
             this.tb_Senha.PasswordChar = '*';
             this.tb_Senha.Size = new System.Drawing.Size(190, 23);
@@ -130,12 +133,37 @@
             this.linkLabel2.VisitedLinkColor = System.Drawing.Color.Teal;
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.checkBox1.Location = new System.Drawing.Point(68, 308);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(70, 17);
+            this.checkBox1.TabIndex = 10;
+            this.checkBox1.Text = "Professor";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.checkBox2.Location = new System.Drawing.Point(68, 331);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(83, 17);
+            this.checkBox2.TabIndex = 11;
+            this.checkBox2.Text = "Colaborador";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
             // fLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(323, 464);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.tb_Senha);
             this.Controls.Add(this.tb_Usuario);
@@ -167,6 +195,8 @@
         private System.Windows.Forms.TextBox tb_Usuario;
         private System.Windows.Forms.TextBox tb_Senha;
         private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
     }
 }
 
