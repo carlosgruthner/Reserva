@@ -1,6 +1,6 @@
 ﻿namespace Reserva
 {
-    partial class fReservar_dados
+    partial class DadosReserva
     {
         /// <summary>
         /// Required designer variable.

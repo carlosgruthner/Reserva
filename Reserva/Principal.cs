@@ -12,17 +12,17 @@ using System.Threading;
 
 namespace Reserva
 {
-    public partial class fPrincipal : Form
+    public partial class Principal : Form
     {
         Thread nt;
-        public fPrincipal()
+        public Principal()
         {
             InitializeComponent();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            fReservar_dados formReservar = new fReservar_dados();
+            DadosReserva formReservar = new DadosReserva();
             formReservar.ShowDialog();
         }
     }
