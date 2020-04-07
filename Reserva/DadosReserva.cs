@@ -16,5 +16,10 @@ namespace Reserva
         {
             InitializeComponent();
         }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

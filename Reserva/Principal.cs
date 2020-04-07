@@ -14,16 +14,20 @@ namespace Reserva
 {
     public partial class Principal : Form
     {
-        Thread nt;
         public Principal()
         {
             InitializeComponent();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void BtnReserva_Click(object sender, EventArgs e)
         {
             DadosReserva formReservar = new DadosReserva();
             formReservar.ShowDialog();
+        }
+
+        private void BtnSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

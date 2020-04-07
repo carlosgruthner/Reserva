@@ -38,7 +38,6 @@ namespace Reserva
             {
                 MessageBox.Show("Usuário ou Senha incorretos");
             }
-            
         }
 
         private void PainelPricipal()
@@ -46,7 +45,7 @@ namespace Reserva
             Application.Run(new Principal());
         }
 
-        private void Sair_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void BtnSair_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
@@ -55,7 +54,7 @@ namespace Reserva
         {
             Application.Run(new CadastroUsuario());
         }
-
+        
         private void label1_Click(object sender, EventArgs e)
         {
 
