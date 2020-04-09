@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Reserva
 {
-    public partial class fReservar_dados : Form
+    public partial class CadastroUsuario : Form
     {
-        public fReservar_dados()
+        public CadastroUsuario()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace Reserva
 {
-    partial class fCadastro_usuario
+    partial class CadastroUsuario
     {
         /// <summary>
         /// Required designer variable.
