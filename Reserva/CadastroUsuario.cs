@@ -16,5 +16,15 @@ namespace Reserva
         {
             InitializeComponent();
         }
+
+        private void SaveCad_Click(object sender, EventArgs e)
+        {
+            Application.Run(new Principal());
+        }
+
+        private void CancelCad_Click(object sender, EventArgs e)
+        {
+            Application.Run(new Login());
+        }
     }
 }
