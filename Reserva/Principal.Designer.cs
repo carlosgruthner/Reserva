@@ -34,10 +34,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.GrupoReservas = new System.Windows.Forms.GroupBox();
+            this.BtnExcluir = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.Reservas = new System.Windows.Forms.Label();
             this.TabelaReserva = new System.Windows.Forms.DataGridView();
-            this.BtnExcluir = new System.Windows.Forms.Button();
             this.Sala = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.CursoDisciplina = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Serie = new System.Windows.Forms.DataGridViewComboBoxColumn();
@@ -65,13 +65,26 @@
             this.GrupoReservas.Margin = new System.Windows.Forms.Padding(2);
             this.GrupoReservas.Name = "GrupoReservas";
             this.GrupoReservas.Padding = new System.Windows.Forms.Padding(4);
-            this.GrupoReservas.Size = new System.Drawing.Size(1092, 524);
+            this.GrupoReservas.Size = new System.Drawing.Size(1192, 524);
             this.GrupoReservas.TabIndex = 0;
             this.GrupoReservas.TabStop = false;
             // 
+            // BtnExcluir
+            // 
+            this.BtnExcluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.BtnExcluir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.BtnExcluir.FlatAppearance.BorderSize = 0;
+            this.BtnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnExcluir.Location = new System.Drawing.Point(1065, 10);
+            this.BtnExcluir.Name = "BtnExcluir";
+            this.BtnExcluir.Size = new System.Drawing.Size(120, 25);
+            this.BtnExcluir.TabIndex = 1;
+            this.BtnExcluir.Text = "Excluir Reserva";
+            this.BtnExcluir.UseVisualStyleBackColor = false;
+            // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(735, 12);
+            this.dateTimePicker1.Location = new System.Drawing.Point(835, 12);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
             this.dateTimePicker1.TabIndex = 2;
@@ -147,22 +160,9 @@
             this.TabelaReserva.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlText;
             this.TabelaReserva.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             this.TabelaReserva.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.TabelaReserva.Size = new System.Drawing.Size(1092, 465);
+            this.TabelaReserva.Size = new System.Drawing.Size(1192, 465);
             this.TabelaReserva.TabIndex = 0;
             this.TabelaReserva.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TabelaReserva_CellContentClick);
-            // 
-            // BtnExcluir
-            // 
-            this.BtnExcluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.BtnExcluir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.BtnExcluir.FlatAppearance.BorderSize = 0;
-            this.BtnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnExcluir.Location = new System.Drawing.Point(965, 10);
-            this.BtnExcluir.Name = "BtnExcluir";
-            this.BtnExcluir.Size = new System.Drawing.Size(120, 25);
-            this.BtnExcluir.TabIndex = 1;
-            this.BtnExcluir.Text = "Excluir Reserva";
-            this.BtnExcluir.UseVisualStyleBackColor = false;
             // 
             // Sala
             // 
@@ -185,7 +185,6 @@
             this.Sala.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Sala.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.Sala.ToolTipText = "Sala que será utilizado o equipamento. Ex.: 01";
-            this.Sala.Width = 80;
             // 
             // CursoDisciplina
             // 
@@ -217,7 +216,7 @@
             this.Serie.Name = "Serie";
             this.Serie.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Serie.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Serie.Width = 80;
+            this.Serie.Width = 120;
             // 
             // Inicio
             // 
@@ -233,7 +232,6 @@
             this.Inicio.Name = "Inicio";
             this.Inicio.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Inicio.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Inicio.Width = 80;
             // 
             // Termino
             // 
@@ -249,7 +247,6 @@
             this.Termino.Name = "Termino";
             this.Termino.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Termino.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Termino.Width = 80;
             // 
             // NomeProfessor
             // 
@@ -296,7 +293,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(1114, 550);
+            this.ClientSize = new System.Drawing.Size(1214, 550);
             this.Controls.Add(this.GrupoReservas);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));

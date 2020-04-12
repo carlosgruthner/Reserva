@@ -47,11 +47,6 @@ namespace Reserva
             Application.Run(new Principal());
         }
 
-        private void BtnCad_Click(object sender, EventArgs e)
-        {
-            Application.Run(new CadastroUsuario());
-        }
-
         private void CadUser_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             NewUser = new Thread(PainelCadastro);
