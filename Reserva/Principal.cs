@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 
 namespace Reserva
@@ -18,10 +19,15 @@ namespace Reserva
             InitializeComponent();
         }
 
-        private void TabelaReserva_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void BtnReserva_Click(object sender, EventArgs e)
         {
-
+            DadosReserva formReservar = new DadosReserva();
+            formReservar.ShowDialog();
         }
 
+        private void BtnSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
