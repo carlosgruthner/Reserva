@@ -35,18 +35,18 @@
             this.LbSenha = new System.Windows.Forms.Label();
             this.TbUsuario = new System.Windows.Forms.TextBox();
             this.TbSenha = new System.Windows.Forms.TextBox();
-            this.CadUser = new System.Windows.Forms.LinkLabel();
+            this.BtnSair = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnEntrar
             // 
             this.BtnEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.BtnEntrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.BtnEntrar.FlatAppearance.BorderColor = System.Drawing.Color.DarkTurquoise;
             this.BtnEntrar.FlatAppearance.BorderSize = 0;
             this.BtnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEntrar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.BtnEntrar.Location = new System.Drawing.Point(130, 300);
+            this.BtnEntrar.Location = new System.Drawing.Point(75, 302);
             this.BtnEntrar.Name = "BtnEntrar";
             this.BtnEntrar.Size = new System.Drawing.Size(85, 25);
             this.BtnEntrar.TabIndex = 0;
@@ -74,6 +74,7 @@
             this.LbLogin.Size = new System.Drawing.Size(43, 17);
             this.LbLogin.TabIndex = 2;
             this.LbLogin.Text = "Login";
+            this.LbLogin.Click += new System.EventHandler(this.label1_Click);
             // 
             // LbSenha
             // 
@@ -91,7 +92,7 @@
             this.TbUsuario.AccessibleDescription = "";
             this.TbUsuario.BackColor = System.Drawing.Color.WhiteSmoke;
             this.TbUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TbUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TbUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TbUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.TbUsuario.Location = new System.Drawing.Point(75, 200);
             this.TbUsuario.Name = "TbUsuario";
@@ -102,7 +103,7 @@
             // 
             this.TbSenha.BackColor = System.Drawing.Color.WhiteSmoke;
             this.TbSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TbSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TbSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TbSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.TbSenha.Location = new System.Drawing.Point(75, 260);
             this.TbSenha.Name = "TbSenha";
@@ -110,40 +111,33 @@
             this.TbSenha.Size = new System.Drawing.Size(200, 20);
             this.TbSenha.TabIndex = 8;
             // 
-            // CadUser
+            // BtnSair
             // 
-            this.CadUser.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.CadUser.AutoSize = true;
-            this.CadUser.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.CadUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.CadUser.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.CadUser.Location = new System.Drawing.Point(127, 340);
-            this.CadUser.Name = "CadUser";
-            this.CadUser.Size = new System.Drawing.Size(88, 13);
-            this.CadUser.TabIndex = 9;
-            this.CadUser.TabStop = true;
-            this.CadUser.Text = "Cadastro Usuario";
-            this.CadUser.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.CadUser.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.CadUser_LinkClicked);
+            this.BtnSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.BtnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSair.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnSair.Location = new System.Drawing.Point(190, 302);
+            this.BtnSair.Name = "BtnSair";
+            this.BtnSair.Size = new System.Drawing.Size(85, 25);
+            this.BtnSair.TabIndex = 10;
+            this.BtnSair.Text = "Sair";
+            this.BtnSair.UseVisualStyleBackColor = false;
+            this.BtnSair.Click += new System.EventHandler(this.BtnSair_Click);
             // 
             // Login
             // 
-            this.AcceptButton = this.BtnEntrar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
-            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(350, 400);
-            this.Controls.Add(this.CadUser);
+            this.Controls.Add(this.BtnSair);
             this.Controls.Add(this.TbSenha);
             this.Controls.Add(this.TbUsuario);
             this.Controls.Add(this.LbSenha);
             this.Controls.Add(this.LbLogin);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnEntrar);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -164,7 +158,7 @@
         private System.Windows.Forms.Label LbSenha;
         private System.Windows.Forms.TextBox TbUsuario;
         private System.Windows.Forms.TextBox TbSenha;
-        private System.Windows.Forms.LinkLabel CadUser;
+        private System.Windows.Forms.Button BtnSair;
     }
 }
 

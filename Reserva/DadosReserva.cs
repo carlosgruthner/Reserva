@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Reserva
 {
-    public partial class CadastroUsuario : Form
+    public partial class DadosReserva : Form
     {
-        public CadastroUsuario()
+        public DadosReserva()
         {
             InitializeComponent();
+        }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
